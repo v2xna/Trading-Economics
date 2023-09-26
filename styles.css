@@ -1,3 +1,7 @@
+:root {
+  --silver: #f4f4f4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -113,4 +117,97 @@ main {
   text-align: left;
   font-size: 16px;
   padding: 15px 20px;
+}
+
+.box {
+  border: 2px solid #e7e7e7;
+  margin-top: 10px;
+}
+
+.box-title {
+  border-bottom: 2px solid #e7e7e7;
+  background-color: var(--silver);
+  padding: 8px 12px;
+}
+
+.box-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px 12px;
+}
+
+.box-sub {
+  margin-top: 35px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.box-sub h5 {
+  font-size: 11px;
+}
+
+.box-sub h5 span {
+  font-size: 28px;
+  display: block;
+}
+
+.box-sub p {
+  margin: 13px 0;
+  line-height: 1.5;
+}
+
+.box-sub ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box-sub ul li {
+  font-weight: bold;
+}
+
+.box-sub button {
+  margin: 13px 0;
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #0771fc;
+  font-size: 18px;
+  border: none;
+}
+
+.box-sub button:hover {
+  background-color: #0045a0;
+}
+
+.box-hiring {
+  padding: 20px;
+  border: 2px solid #e7e7e7;
+  margin: 30px 0;
+}
+
+.box-hiring p {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.box-hiring button {
+  margin: 15px 0;
+  color: #fff;
+  background-color: #4595ff;
+  border: none;
+  padding: 10px 14px;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 35px;
 }
