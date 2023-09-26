@@ -179,6 +179,7 @@ main {
 
 .box-sub button:hover {
   background-color: #0045a0;
+  cursor: pointer;
 }
 
 .box-hiring {
@@ -201,6 +202,12 @@ main {
   font-size: 16px;
 }
 
+.box-hiring button:hover {
+  color: #000;
+  background-color: aqua;
+  cursor: pointer;
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -210,4 +217,23 @@ footer {
 .footer-links {
   display: flex;
   gap: 35px;
+}
+
+.footer-links ul li:first-child {
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+}
+
+.footer-links ul li {
+  width: 200px;
+  margin: 7px 0;
+}
+
+.footer-copyright {
+  margin-top: 50px;
+}
+
+.footer-copyright p {
+  color: #8a8a8a;
+  font-size: 10px;
 }
