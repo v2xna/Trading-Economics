@@ -26,6 +26,10 @@ nav {
   margin: 0 auto;
 }
 
+.logo p {
+  font-weight: bold;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -39,9 +43,14 @@ nav {
   font-size: 18px;
 }
 
+.menu ul li a {
+  padding: 10px;
+}
+
 .menu ul li a:hover {
   background-color: #fff;
   color: #000;
+  cursor: pointer;
 }
 
 .menu ul input {
@@ -65,4 +74,43 @@ nav {
   align-items: center;
   padding: 10px;
   gap: 10px;
+}
+
+.tabs ul li a {
+  padding: 10px;
+}
+
+.tabs ul li a:hover {
+  background-color: #dadada;
+}
+
+/* ======== Main ========= */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5px;
+}
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar {
+  border: 2px solid #e7e7e7;
+  padding: 10px 5px;
+}
+
+.accordion-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.accordion-div button {
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  padding: 15px 20px;
 }

@@ -29,7 +29,9 @@
               <li><a>Indicators</a></li>
               <li><a>Countries</a></li>
               <li><a>Forecasts</a></li>
-              <li><i class="fa-solid fa-user"></i></li>
+              <li>
+                <a><i class="fa-solid fa-user"></i></a>
+              </li>
               <input type="text" placeholder="Search" />
             </ul>
           </div>
@@ -44,16 +46,120 @@
 
       <div class="container tabs">
         <ul>
-          <li>Summary</li>
-          <li>Calendar</li>
-          <li>Forecast</li>
-          <li>Stats</li>
-          <li>Alerts</li>
-          <li>Download</li>
+          <li><a>Summary</a></li>
+          <li><a>Calendar</a></li>
+          <li><a>Forecast</a></li>
+          <li><a>Stats</a></li>
+          <li><a>Alerts</a></li>
+          <li><a>Download</a></li>
         </ul>
       </div>
     </header>
-    <main></main>
+    <main class="container">
+      <section class="section-one">
+        <p>
+          New home prices in Canada fell by 0.9% from the previous year in
+          August of 2023, the same pace as in July and marking the fifth
+          consecutive period of declines since November 2019, as elevated
+          borrowing costs continued to add downward pressure.
+          <span>source: Statistics Canada</span>
+        </p>
+        <div>CHART</div>
+      </section>
+
+      <section class="section-two">
+        <select>
+          <option>Canada</option>
+          <option>USA</option>
+          <option>Japan</option>
+          <option>Korea</option>
+          <option>China</option>
+        </select>
+
+        <div class="sidebar">
+          <ul>
+            <li><a>Calendar</a></li>
+            <li><a>Forecast</a></li>
+            <li><a>Indicators</a></li>
+            <li><a>News</a></li>
+          </ul>
+        </div>
+
+        <div class="accordion-div">
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Markets
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> GDP
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Labour
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Prices
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Health
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Money
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Trade
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Government
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Business
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Consumer
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Housing
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Taxes
+          </button>
+          <button class="accordion">
+            <i class="fa-solid fa-caret-down"></i> Climate
+          </button>
+        </div>
+
+        <div>
+          <div>More Indicators</div>
+          <ul>
+            <li><a>National Statistics</a></li>
+            <li><a>World Bank</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>TRADING ECONOMICS <span>Subscriptions</span></h5>
+          <p>
+            We have a plan for your needs. Standard users can export data in a
+            easy to use web interface or using an excel add-in. Advanced users
+            can use our Python/R/Matlab packages. API users can feed a custom
+            application. White label accounts can distribute our data.
+          </p>
+          <ul>
+            <li>50 Million Indicators</li>
+            <li>Economic Calendar</li>
+            <li>News Stream</li>
+            <li>Earnings Releases</li>
+            <li>Credit Ratings</li>
+            <li>Forecasts</li>
+            <li>50K Markets</li>
+            <li>Live Quotes</li>
+            <li>Currencies</li>
+            <li>Stocks</li>
+            <li>Commodities</li>
+            <li>Bonds</li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script src="app.js"></script>
   </body>
