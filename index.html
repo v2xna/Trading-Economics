@@ -76,6 +76,105 @@
           <span>source: Statistics Canada</span>
         </p>
         <div><canvas id="myChart"></canvas></div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Calendar</th>
+              <th>GMT</th>
+              <th>Reference</th>
+              <th></th>
+              <th>Actual</th>
+              <th>Previous</th>
+              <th>Consensus</th>
+              <th>TEForecast</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2023-08-21</td>
+              <td>12:30 PM</td>
+              <td>New Housing Price Index YoY</td>
+              <td>Jul</td>
+              <td>-0.9%</td>
+              <td>-0.7%</td>
+              <td></td>
+              <td>-0.8%</td>
+            </tr>
+            <tr>
+              <td>2023-08-21</td>
+              <td>12:30 PM</td>
+              <td>New Housing Price Index YoY</td>
+              <td>Aug</td>
+              <td>-0.9%</td>
+              <td>-0.9%</td>
+              <td></td>
+              <td>-1.1%</td>
+            </tr>
+            <tr>
+              <td>2023-08-21</td>
+              <td>12:30 PM</td>
+              <td>New Housing Price Index YoY</td>
+              <td>Sep</td>
+              <td></td>
+              <td>-0.9%</td>
+              <td></td>
+              <td>0.1%</td>
+            </tr>
+            <tr>
+              <td>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="box-2">
+          <div class="box">
+            <div class="box-title">Related</div>
+            <ul class="box-items">
+              <li><a>TSX Holds Losses</a></li>
+              <li><a>Canada Manufacturing Sales Likely Rose 1%</a></li>
+              <li><a>Canadian Dollar Hovers Near 6-Week High</a></li>
+              <li><a>Canada Retail Sales Seen Dropping in August</a></li>
+              <li><a>Canada New Home Prices Inch Higher in August</a></li>
+              <li>
+                <a>Canadian 10-Year Bond Yield Soars to Over 15-Year High</a>
+              </li>
+              <li><a>Canada Inflation Rises More than Expected</a></li>
+              <li>
+                <a
+                  >Canada Raw Materials Prices Rise Less than Expected in
+                  August</a
+                >
+              </li>
+              <li>
+                <a>Canada Producer Prices Rise for 1st Time in 10 Months</a>
+              </li>
+              <li><a>Canada Housing Starts Fall Less than Expected</a></li>
+            </ul>
+            <button><i class="fa-solid fa-plus"></i></button>
+          </div>
+
+          <div class="box">
+            <div class="box-title">Latest</div>
+            <ul class="box-items">
+              <li><a>Brent Crude Tops $96</a></li>
+              <li><a>Ibovespa Breaks 4-Day Losing Streak</a></li>
+              <li><a>Oil Prices Rise More than 2.5%</a></li>
+              <li><a>Cotton Heads Towards 10-Month Peak</a></li>
+              <li>
+                <a>US Crude Oil Stocks Fall Way More than Anticipated: EIA</a>
+              </li>
+              <li><a>Euro Touches $1.05</a></li>
+              <li><a>TSX Holds Losses</a></li>
+              <li><a>US Stocks Rebound</a></li>
+              <li><a>Baltic Exchange Dry Index at 11-Month High</a></li>
+              <li><a>Czech Republic Holds Rate at 7% as Expected</a></li>
+            </ul>
+            <button><i class="fa-solid fa-plus"></i></button>
+          </div>
+        </div>
       </section>
 
       <section class="section-two">
@@ -223,54 +322,6 @@
     </footer>
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <script>
-      const ctx = document.getElementById("myChart");
-
-      new Chart(ctx, {
-        type: "bar",
-        data: {
-          labels: [
-            "",
-            "Oct 2022",
-            "",
-            "",
-            "Jan 2023",
-            "",
-            "",
-            "Apr 2023",
-            "",
-            "",
-            "Jul 2023",
-            "",
-          ],
-          datasets: [
-            {
-              label: "",
-              data: [
-                6.3, 5.1, 4.1, 3.9, 2.7, 1.4, -0.2, -0.6, -0.7, -0.9, -0.9,
-              ],
-              borderWidth: 1,
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: {
-              position: "right",
-              beginAtZero: true,
-              min: -2,
-              max: 8,
-              ticks: {
-                stepSize: 2,
-                callback: function (value) {
-                  return value.toFixed(2) + "%";
-                },
-              },
-            },
-          },
-        },
-      });
-    </script>
+    <script src="chart.js"></script>
   </body>
 </html>
