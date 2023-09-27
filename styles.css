@@ -94,6 +94,9 @@ main {
   grid-template-columns: 2fr 1fr;
   gap: 5px;
 }
+.section-one {
+  padding: 10px;
+}
 
 .section-two {
   display: flex;
