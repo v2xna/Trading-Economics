@@ -73,61 +73,78 @@
           August of 2023, the same pace as in July and marking the fifth
           consecutive period of declines since November 2019, as elevated
           borrowing costs continued to add downward pressure.
-          <span>source: Statistics Canada</span>
+          <span class="sm-text">source: Statistics Canada</span>
         </p>
-        <div><canvas id="myChart"></canvas></div>
+        <div>
+          <div class="chart-menu bg-silver">
+            <ul>
+              <li><i class="fa-regular fa-calendar-days"></i></li>
+              <li>1Y</li>
+              <li>5Y</li>
+              <li>10Y</li>
+              <li>25Y</li>
+              <li>MAX</li>
+              <li><i class="fa-solid fa-chart-simple"></i> Chart</li>
+              <li><i class="fa-solid fa-code-compare"></i> Compare</li>
+              <li><i class="fa-solid fa-download"></i> Export</li>
+              <li><i class="fa-solid fa-table"></i> API</li>
+              <li><i class="fa-solid fa-image"></i> Embed</li>
+            </ul>
+          </div>
+          <div><canvas id="myChart"></canvas></div>
+        </div>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Calendar</th>
-              <th>GMT</th>
-              <th>Reference</th>
-              <th></th>
-              <th>Actual</th>
-              <th>Previous</th>
-              <th>Consensus</th>
-              <th>TEForecast</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2023-08-21</td>
-              <td>12:30 PM</td>
-              <td>New Housing Price Index YoY</td>
-              <td>Jul</td>
-              <td>-0.9%</td>
-              <td>-0.7%</td>
-              <td></td>
-              <td>-0.8%</td>
-            </tr>
-            <tr>
-              <td>2023-08-21</td>
-              <td>12:30 PM</td>
-              <td>New Housing Price Index YoY</td>
-              <td>Aug</td>
-              <td>-0.9%</td>
-              <td>-0.9%</td>
-              <td></td>
-              <td>-1.1%</td>
-            </tr>
-            <tr>
-              <td>2023-08-21</td>
-              <td>12:30 PM</td>
-              <td>New Housing Price Index YoY</td>
-              <td>Sep</td>
-              <td></td>
-              <td>-0.9%</td>
-              <td></td>
-              <td>0.1%</td>
-            </tr>
-            <tr>
-              <td>
-                <button><i class="fa-solid fa-plus"></i></button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="chart-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Calendar</th>
+                <th>GMT</th>
+                <th>Reference</th>
+                <th></th>
+                <th>Actual</th>
+                <th>Previous</th>
+                <th>Consensus</th>
+                <th>TEForecast</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-08-21</td>
+                <td>12:30 PM</td>
+                <td>New Housing Price Index YoY</td>
+                <td>Jul</td>
+                <td>-0.9%</td>
+                <td>-0.7%</td>
+                <td></td>
+                <td>-0.8%</td>
+              </tr>
+              <tr>
+                <td>2023-08-21</td>
+                <td>12:30 PM</td>
+                <td>New Housing Price Index YoY</td>
+                <td>Aug</td>
+                <td>-0.9%</td>
+                <td>-0.9%</td>
+                <td></td>
+                <td>-1.1%</td>
+              </tr>
+              <tr>
+                <td>2023-08-21</td>
+                <td>12:30 PM</td>
+                <td>New Housing Price Index YoY</td>
+                <td>Sep</td>
+                <td></td>
+                <td>-0.9%</td>
+                <td></td>
+                <td>0.1%</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="chart-button">
+            <button><i class="fa-solid fa-plus"></i></button>
+          </div>
+        </div>
 
         <div class="box-2">
           <div class="box">

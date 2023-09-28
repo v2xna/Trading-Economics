@@ -8,16 +8,24 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 ul li {
   list-style: none;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .bg-silver {
   background-color: #f4f4f4;
 }
 
-body {
-  font-family: sans-serif;
+.sm-text {
+  font-size: 12px;
 }
 
 nav {
@@ -98,20 +106,48 @@ main {
   padding: 10px;
 }
 
+.section-one .chart-menu {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+}
+
+.section-one .chart-menu ul {
+  display: flex;
+  gap: 20px;
+}
+
 .section-one table {
+  width: 100%;
   border: 1px solid #c4c4c4;
-  margin: 35px 0;
+  margin-top: 35px;
+  border-collapse: collapse;
 }
 
 .section-one table th {
-  padding: 20px;
   background-color: var(--silver);
+  font-weight: normal;
 }
 
 .section-one table th,
 td {
-  border-bottom: 2px solid #c4c4c4;
-  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #c4c4c4;
+  /* text-align: center; */
+}
+
+.section-one .chart-table .chart-button {
+  padding: 10px;
+  margin-bottom: 35px;
+  border: 1px solid #c4c4c4;
+  border-top: none;
+}
+
+.section-one .chart-table .chart-button button {
+  background-color: #fff;
+  padding: 8px 12px;
+  border: 1px solid #c4c4c4;
+  margin: 5px 0;
 }
 
 .section-one .box-2 {
@@ -131,6 +167,14 @@ td {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.section-two select {
+  padding: 10px 5px;
+  border: none;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 16px;
 }
 
 .sidebar {
