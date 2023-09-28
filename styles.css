@@ -108,13 +108,22 @@ main {
 
 .section-one .chart-menu {
   margin-top: 15px;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #e7e7e7;
 }
 
 .section-one .chart-menu ul {
   display: flex;
   gap: 20px;
+}
+
+.section-one .chart-menu ul li {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.section-one .chart-menu ul li:hover {
+  background-color: #e7e7e7;
 }
 
 .section-one table {
