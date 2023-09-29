@@ -1,4 +1,9 @@
 const ctx = document.getElementById("myChart");
+let dataValues = [6.3, 5.1, 4.1, 3.9, 2.7, 1.4, -0.2, -0.6, -0.7, -0.9, -0.9];
+
+let backgroundColors = dataValues.map(function (value) {
+  return value >= 0 ? "#0564b1" : "#eedb89";
+});
 
 new Chart(ctx, {
   type: "bar",
@@ -20,8 +25,9 @@ new Chart(ctx, {
     datasets: [
       {
         label: "",
-        data: [6.3, 5.1, 4.1, 3.9, 2.7, 1.4, -0.2, -0.6, -0.7, -0.9, -0.9],
+        data: dataValues,
         borderWidth: 1,
+        backgroundColor: backgroundColors,
       },
     ],
   },
