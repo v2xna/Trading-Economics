@@ -26,7 +26,6 @@ p {
 
 .sm-text {
   font-size: 12px;
-  color: #eedb89;
 }
 
 nav {
@@ -189,7 +188,13 @@ td {
 
 .sidebar {
   border: 2px solid #e7e7e7;
-  padding: 10px 5px;
+  padding: 13px;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .accordion-div {
