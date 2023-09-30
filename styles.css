@@ -171,6 +171,11 @@ td {
   margin: 5px 0;
 }
 
+.section-one .chart-table .chart-button button:hover {
+  cursor: pointer;
+  background-color: #dadada;
+}
+
 .section-one .box-2 {
   display: flex;
   gap: 20px;
@@ -182,6 +187,11 @@ td {
   border: 1px solid #c4c4c4;
   margin: 15px 0;
   margin-left: 10px;
+}
+
+.section-one .box-2 button:hover {
+  cursor: pointer;
+  background-color: #dadada;
 }
 
 .section-two {
