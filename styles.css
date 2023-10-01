@@ -138,6 +138,11 @@ main {
   cursor: pointer;
 }
 
+.section-one .chart-box {
+  margin: 0 auto;
+  width: 600px;
+}
+
 .section-one table {
   width: 100%;
   border: 1px solid #c4c4c4;
