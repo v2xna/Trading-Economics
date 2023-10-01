@@ -117,8 +117,20 @@ main {
   padding: 10px;
 }
 
-.section-one .chart-menu {
+.chart-div {
   margin-top: 15px;
+  padding-bottom: 45px;
+  border: 1px solid #e7e7e7;
+}
+
+.chart-div p {
+  float: right;
+  margin-top: 10px;
+  margin-right: 140px;
+  font-size: 8px;
+}
+
+.section-one .chart-menu {
   padding: 5px;
   border: 1px solid #e7e7e7;
 }
