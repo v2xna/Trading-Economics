@@ -24,6 +24,10 @@ p {
   background-color: #f4f4f4;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .sm-text {
   font-size: 12px;
 }
@@ -72,7 +76,7 @@ nav {
   font-size: inherit;
 }
 
-.link:hover {
+.dropdown.active > .link {
   background-color: #fff;
   color: #000;
 }
@@ -94,9 +98,15 @@ nav {
   transition: opacity 150ms ease-in-out;
 }
 
-.dropdown > .link:focus + .dropdown-menu {
+.dropdown.active > .link + .dropdown-menu {
   opacity: 1;
   pointer-events: auto;
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }
 
 /* =============================== */

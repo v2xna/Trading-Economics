@@ -23,34 +23,46 @@
           </div>
           <div class="menu">
             <a href="#" class="link">Calendar</a>
-            <a href="#" class="link">News</a>
+            <a href="#" class="link text-white">News</a>
 
-            <div class="dropdown">
-              <button class="link">
+            <div class="dropdown" data-dropdown>
+              <button class="link" data-dropdown-button>
                 Markets <i class="fa-solid fa-caret-down"></i>
               </button>
-              <div class="dropdown-menu">Dropdown Content</div>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-link">Currencies</a>
+                <a href="#" class="dropdown-link">Stocks</a>
+                <a href="#" class="dropdown-link">Commodities</a>
+                <a href="#" class="dropdown-link">Bonds</a>
+                <a href="#" class="dropdown-link">Crypto</a>
+                <a href="#" class="dropdown-link">Earnings</a>
+                <a href="#" class="dropdown-link">Holidays</a>
+              </div>
             </div>
-            <div class="dropdown">
-              <button class="link">
+
+            <div class="dropdown" data-dropdown>
+              <button class="link" data-dropdown-button>
                 Indicators <i class="fa-solid fa-caret-down"></i>
               </button>
               <div class="dropdown-menu">Dropdown Content</div>
             </div>
-            <div class="dropdown">
-              <button class="link">
+
+            <div class="dropdown" data-dropdown>
+              <button class="link" data-dropdown-button>
                 Countries <i class="fa-solid fa-caret-down"></i>
               </button>
               <div class="dropdown-menu">Dropdown Content</div>
             </div>
-            <div class="dropdown">
-              <button class="link">
+
+            <div class="dropdown" data-dropdown>
+              <button class="link" data-dropdown-button>
                 Forecasts <i class="fa-solid fa-caret-down"></i>
               </button>
               <div class="dropdown-menu">Dropdown Content</div>
             </div>
-            <div class="dropdown">
-              <button class="link">
+
+            <div class="dropdown" data-dropdown>
+              <button class="link" data-dropdown-button>
                 <i class="fa-solid fa-user"></i>
                 <i class="fa-solid fa-caret-down"></i>
               </button>
@@ -373,7 +385,7 @@
         <p>All Rights Reserved</p>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"
