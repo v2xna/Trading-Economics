@@ -403,6 +403,10 @@ footer {
   margin: 7px 0;
 }
 
+.footer-links ul li a {
+  color: #fff;
+}
+
 .footer-links ul li a:hover {
   cursor: pointer;
   text-decoration: underline;
