@@ -119,6 +119,8 @@ nav {
   display: flex;
 }
 
+.dropdown-men
+
 /* =============================== */
 
 .title {
@@ -447,6 +449,5 @@ footer {
 
 .footer-copyright p {
   color: #8a8a8a;
-
   font-size: 10px;
 }
