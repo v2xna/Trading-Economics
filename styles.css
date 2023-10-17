@@ -119,6 +119,16 @@ nav {
   display: flex;
 }
 
+.dropdown-user {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 /* =============================== */
 
 .title {

@@ -3,7 +3,11 @@ const dropdownMenu = document.querySelector(".dropdown-menu");
 
 btnDropdown.addEventListener("click", (e) => {
   e.stopPropagation();
-  dropdownMenu.classList.add("open");
+  if (dropdownMenu.classList.contains("open")) {
+    dropdownMenu.classList.remove("open");
+  } else {
+    dropdownMenu.classList.add("open");
+  }
 });
 
 document.addEventListener("click", (e) => {
