@@ -103,15 +103,18 @@ nav {
   position: absolute;
   background-color: #fff;
   display: none;
-  flex-direction: column;
   border: 1px solid #e7e7e7;
 }
 
-.dropdown-menu a {
+.dropdown-market {
+  flex-direction: column;
+}
+
+.dropdown-market a {
   padding: 12px 35px;
 }
 
-.dropdown-menu a:hover {
+.dropdown-market a:hover {
   background-color: var(--silver);
 }
 
@@ -120,11 +123,9 @@ nav {
 }
 
 .dropdown-user {
-  position: absolute;
-  background-color: #fff;
+  color: #000;
   padding: 20px;
   width: 300px;
-  display: flex;
   flex-direction: column;
   gap: 15px;
 }
