@@ -7,6 +7,8 @@ btnDropdown.addEventListener("click", (e) => {
     dropdownMenu.classList.remove("open");
   } else {
     dropdownMenu.classList.add("open");
+
+    let i = 5;
   }
 });
 
