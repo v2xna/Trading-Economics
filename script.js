@@ -1,22 +1,12 @@
-const btnDropdown = document.querySelector("#dropdown-btn");
-const dropdownMenu = document.querySelector(".dropdown-menu");
+const btnDropDown = document.querySelectorAll(".dropdown-btn");
+const divDropdown = document.querySelectorAll(".dropdown-menu");
 
-btnDropdown.addEventListener("click", (e) => {
-  e.stopPropagation();
-  if (dropdownMenu.classList.contains("open")) {
-    dropdownMenu.classList.remove("open");
-  } else {
-    dropdownMenu.classList.add("open");
-
-    let i = 5;
-  }
-});
-
-document.addEventListener("click", (e) => {
-  if (e.target === btnDropdown) return;
-  dropdownMenu.classList.remove("open");
-});
-
-dropdownMenu.addEventListener("click", (e) => {
-  e.stopPropagation();
-});
+for (let i = 0; i < btnDropDown.length; i++) {
+  btnDropDown[i].addEventListener("click", function () {
+    if (divDropdown[i].classList.contains("hidden")) {
+      divDropdown[i].classList.remove("hidden");
+    } else {
+      divDropdown[i].classList.add("hidden");
+    }
+  });
+}
