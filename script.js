@@ -1,12 +1,10 @@
 const btnDropDown = document.querySelectorAll(".dropdown-btn");
-const divDropdown = document.querySelectorAll(".dropdown-menu");
+const menuDropdown = document.querySelectorAll(".dropdown-menu");
+const overlay = document.querySelector(".overlay");
 
-for (let i = 0; i < btnDropDown.length; i++) {
-  btnDropDown[i].addEventListener("click", function () {
-    if (divDropdown[i].classList.contains("hidden")) {
-      divDropdown[i].classList.remove("hidden");
-    } else {
-      divDropdown[i].classList.add("hidden");
-    }
+btnDropDown.forEach(function (btn, i) {
+  btn.addEventListener("click", function () {
+    menuDropdown[i].classList.toggle("hidden");
+    overlay.classList.toggle("hidden");
   });
-}
+});
