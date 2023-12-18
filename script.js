@@ -24,5 +24,3 @@ document.body.addEventListener("click", function (e) {
     closeAllDropdownMenus();
   }
 });
-
-// if dropdown menu is open and user clicks another dropdown close the previous automatically
